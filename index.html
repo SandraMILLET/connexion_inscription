@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Formulaire d'inscription</title>
+</head>
+
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <div class="col-md-12 border bg-light">
+        <form class="col-md-12" action="database.php" method="post">
+            <label>Votre nom</label>
+            <input class="form-control" type="text" id="nom" name="nom" placeholder="Indiquez votre nom" required>
+            <label>Votre pseudo</label>
+            <input class="form-control" type="text" id="pseudo" name="pseudo" placeholder="Indiquez votre pseudo" required>
+            <label>Votre email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Indiquez votre email" required>
+            <label>Votre password</label>
+            <input class="form-control" type="password" id="password" name="password" placeholder="Indiquez votre password" required>
+            <button type="submit" class="btn btn-primary" name="submitconnexion">Envoyer</button>
+        </form>
+    </div>
+    <div>
+        <p>Si déjà inscrit : connectez-vous ci-dessous</p>
+        
+        <a href="connexion.html" class="btn btn-info" role="button">Se connecter</a>
+</div>
+<div>
+    <p>Choissisiez votre cours</p>
+    <a href="cours.html" class="btn btn-success" role="button">Choix du cours</a>
+</div>
+</body>
+
+</html>
